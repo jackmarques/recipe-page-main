@@ -1,0 +1,89 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --Nutmeg: hsl(14, 45%, 36%);
+    --Dark-Raspberry: hsl(332, 51%, 32%);
+    --White: hsl(0, 0%, 100%);
+    --Rose-White: hsl(330, 100%, 98%);
+    --Eggshell: hsl(30, 54%, 90%);
+    --Light-Grey: hsl(30, 18%, 87%);
+    --Wenge-Brown: hsl(30, 10%, 34%);
+    --Dark-Charcoal: hsl(24, 5%, 18%);
+}
+body{
+    background-color: var(--Eggshell);
+    font-family: "Outfit", sans-serif;
+}
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+main{
+    background-color: var(--White);
+    max-width: 750px;
+    align-items: center;
+    margin:60px auto 60px auto;
+    border-radius: 30px;
+    padding: 30px;
+}
+.capaimg img{
+    width: 100%;
+    border-radius: 20px;
+}
+main div:not(:first-child){
+    padding: 1.5rem;
+}
+h1{
+    margin-bottom: 1rem;
+}
+h1, h2{
+    font-family: "Young Serif", serif;
+}
+h2{
+    color: var(--Nutmeg);
+}
+h3{
+    color: var(--Dark-Raspberry);
+}
+ul, ol{
+    list-style-position: inside;
+    padding: 10px;
+}
+strong{
+    color: var(--Dark-Charcoal);
+}
+li, p{
+    color: var(--Wenge-Brown);
+    line-height: 1.6;
+}
+li{
+    list-style: color var(--Nutmeg);
+    margin-top: 0.5rem;
+}
+.preparo{
+    background-color: var(--Rose-White);
+    border-radius: 10px;
+}
+.nutrição p{
+    margin-top: 1rem;
+}
+.nutrição ul li{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 1px solid var(--Light-Grey);
+    padding: 0.5rem 0;
+}
+.nutrição ul li:last-child{
+    border-bottom: none;
+}
